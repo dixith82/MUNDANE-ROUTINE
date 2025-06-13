@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+    <script>
+        function handleSignUp(event) {
+            event.preventDefault(); // Prevent form submission
+            // Redirect to index.html after signup
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Create an Account</h1>
+        <form class="signup-form" onsubmit="handleSignUp(event)">
+            <div class="input-group">
+                <label for="new-username">Username</label>
+                <input type="text" id="new-username" placeholder="Create a username" required>
+            </div>
+            <div class="input-group">
+                <label for="new-password">Password</label>
+                <input type="password" id="new-password" placeholder="Create a password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+            <p class="login-text">Already have an account? <a href="login.html">Log in</a></p>
+        </form>
+    </div>
+</body>
+</html>

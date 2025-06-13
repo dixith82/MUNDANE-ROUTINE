@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.add-task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.add-task input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.calendar-controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar-controls button {
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.calendar-table th, .calendar-table td {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.calendar-table td {
+    height: 100px;
+    width: 14.28%; /* 100% / 7 days */
+    position: relative;
+}
+
+.task-item {
+    background-color: #28a745;
+    color: white;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 4px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+}
+
+.view-tasks-link {
+    text-align: center;
+}
+
+.view-tasks-link a {
+    text-decoration: none;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.show-graph-button, .show-remainders-button {
+    padding: 10px 20px; /* Match the padding of the other buttons */
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px; /* Spacing from the previous link */
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.show-graph-button:hover, .show-remainders-button:hover {
+    background-color: #218838; /* Darker green shade for hover effect */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.task-item {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.calendar-controls {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-table th, .calendar-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+}
+
+.task-popup, .reminders-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.task-content, .reminders-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.task-content .close, .reminders-content .close {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.show-graph-button {
+    margin: 10px 5px;
+}
+.close-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #0056b3;
+}
+.close {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #ff0000; /* Red color for the close button */
+    float: right;
+}
+
+.close-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #0056b3;
+}
+

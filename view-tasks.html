@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Tasks Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Calendar</h1>
+        
+        <!-- Controls to switch month and year -->
+        <div class="calendar-controls">
+            <button id="prev-month" onclick="changeMonth(-1)">Previous Month</button>
+            <span id="month-year"></span>
+            <button id="next-month" onclick="changeMonth(1)">Next Month</button>
+        </div>
+
+        <!-- Calendar Table -->
+        <table id="calendar" class="calendar-table">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+                <!-- Calendar dates will be dynamically inserted here -->
+            </tbody>
+        </table>
+
+        <!-- Go back to Add Task page -->
+        <div class="view-tasks-link">
+            <a href="index.html">Add More Tasks</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

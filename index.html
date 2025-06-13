@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To-Do Task</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+    <div class="container">
+        <h1>Add Task</h1>
+        
+        <!-- Add Task Form -->
+        <div class="task-form">
+            <input type="text" id="task-title" placeholder="Task Title" required>
+            <input type="date" id="task-date" required>
+            <input type="time" id="task-time" required>
+            <select id="task-priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <!-- Navigate to View Tasks Page -->
+        <div class="view-tasks-link">
+            <a href="view-tasks.html">View Tasks</a>
+            <button class="show-graph-button" onclick="renderTaskCompletionChart()">Show Graph</button> <!-- Button to show graph -->
+            <button class="show-graph-button" onclick="viewAllRemainders()">View All Remainders</button> <!-- Button to view all remainders -->
+        </div>
+
+        <!-- Canvas for the Chart -->
+        <div>
+            <canvas id="tasksChart" width="400" height="200"></canvas>
+        </div>
+        
+        <!-- Calendar -->
+        <div class="calendar-controls">
+            <button onclick="changeMonth(-1)">Previous</button>
+            <button onclick="changeMonth(1)">Next</button>
+        </div>
+        <h2 id="month-year"></h2>
+        <table class="calendar-table">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
